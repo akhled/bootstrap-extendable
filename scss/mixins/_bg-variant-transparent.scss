@@ -1,4 +1,3 @@
-// Mixin
 @mixin bg-variant-transparent($parent, $color, $opacity) {
     #{$parent} {
         background-color: rgba($color, $opacity) !important;
@@ -8,18 +7,5 @@
         @include hover-focus {
             background-color: rgba(darken($color, 10%), $opacity) !important;
         }
-    }
-}
-
-// Loop
-@each $color, $value in $theme-colors {
-    $opacity: 10;
-    @while $opacity < 95 {
-        @include bg-variant-transparent(
-            ".bg-#{$color}-#{$opacity}",
-            $value,
-            ($opacity/100)
-        );
-        $opacity: $opacity + 5;
     }
 }

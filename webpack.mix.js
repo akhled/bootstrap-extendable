@@ -13,18 +13,26 @@ const mix = require('laravel-mix');
 
 mix.setPublicPath('dist');
 
-mix
-    .sass(
-		'scss/bootstrap-extendable.scss',
-		mix.inProduction()
-			? 'dist/bootstrap-extendable.min.css'
-			: 'dist/bootstrap-extendable.css'
+/**
+ * Build stylesheets
+ */
+mix.sass(
+    'scss/bootstrap-extendable.scss',
+    mix.inProduction()
+        ? 'dist/bootstrap-extendable.min.css'
+        : 'dist/bootstrap-extendable.css'
+);
+
+
+/**
+ * Generate documentation
+ */
+mix.sass(
+    'scss/bootstrap-extendable.doc.scss',
+    'build/doc.css'
 )
     .options({
         postCss: [
-            /**
-             * Generate documentation
-             */
             require('mdcss')(),
         ],
     });

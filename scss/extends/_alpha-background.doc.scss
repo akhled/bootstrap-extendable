@@ -1,0 +1,26 @@
+/*---
+section: Alpha background
+order: 0
+---
+Transparent background with range from **10** to **95** and step equals **5**. The class cas hover and focus effect on both `<button>` and `<a>` elements
+
+​```html
+
+<button class="bg-primary-50">Click</button>
+<div class="bg-light-85"></div>
+
+```
+
+> Style output example
+
+```css
+
+...
+.bg-light-80 {
+    background-color: rgba(248, 249, 250, 80) !important;
+}
+...
+
+​```
+
+*/

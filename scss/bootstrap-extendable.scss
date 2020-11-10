@@ -4,12 +4,6 @@
  * Licensed under MIT
  */
 
-/*---
-
-# Bootstrap extendable v0.0.3
-
-*/
-
 // Default bootstrap functions
 @import '~bootstrap/scss/functions';
 
@@ -19,10 +13,12 @@
 // Default bootstrap mixins
 @import '~bootstrap/scss/mixins';
 
+// Import mixins
+@import 'mixins/main';
+
 // Bootstrap overrides
 @import './bootstrap-override/sizes';
 @import './bootstrap-override/spacers';
 
 // Extend bootstrap mixins
-@import './bootstrap-extend/background-variant-transparent';
-@import './bootstrap-extend/width-sizing-breakpoint';
+@import 'extends/main';
