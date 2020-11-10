@@ -11,4 +11,11 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.sass('scss/bootstrap-extendable.scss', 'dist/bootstrap-extendable.css').setPublicPath('dist');
+mix.setPublicPath('dist');
+
+mix.sass(
+    'scss/bootstrap-extendable.scss',
+    mix.inProduction()
+        ? 'dist/bootstrap-extendable.min.css'
+        : 'dist/bootstrap-extendable.css'
+);
