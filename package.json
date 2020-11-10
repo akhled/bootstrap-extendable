@@ -32,6 +32,7 @@
 	"homepage": "https://github.com/amrography/bootstrap-extendable#readme",
 	"devDependencies": {
 		"cross-env": "^7.0.2",
+		"del": "^6.0.0",
 		"laravel-mix": "^5.0.9",
 		"mdcss": "^1.5.2",
 		"resolve-url-loader": "^3.1.0",

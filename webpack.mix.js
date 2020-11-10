@@ -1,4 +1,5 @@
 const mix = require('laravel-mix');
+const del = require('del');
 
 /*
  |--------------------------------------------------------------------------
@@ -11,6 +12,10 @@ const mix = require('laravel-mix');
  |
  */
 
+// Delete old styleguide
+del('styleguide');
+
+// Set output path to dist
 mix.setPublicPath('dist');
 
 /**
