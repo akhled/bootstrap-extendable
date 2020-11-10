@@ -1,0 +1,60 @@
+/*---
+section: Position
+title: Position alignments
+---
+Apply position alignments classes (ex: `top-0`). Available classes for top, bottom, left and right properties. For range **0** to **20** and **(50, 60, 70, 80, 90, 100)**
+
+> For example, available top classes
+
+```scss
+.top-0
+.top-1
+.top-2
+.top-3
+.top-4
+.top-5
+.top-6
+.top-7
+.top-8
+.top-9
+.top-10
+.top-11
+.top-12
+.top-13
+.top-14
+.top-15
+.top-16
+.top-17
+.top-18
+.top-19
+.top-20
+.top-50
+.top-60
+.top-70
+.top-80
+.top-90
+.top-100
+```
+
+and the same for `bottom`, `left` and `right`
+
+> Html example
+
+```html
+<div class="p-absolute top-0"></div>
+```
+
+> Style output example
+
+```css
+...
+.p-absolute {
+    position: absolute;
+}
+.top-0 {
+    top: 0;
+}
+...
+​```
+
+*/

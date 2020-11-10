@@ -1,0 +1,25 @@
+/*---
+section: Width and height breakpoint based
+---
+Width class for each breakpoint.
+
+> Html example
+
+```html
+<div class="w-lg-50"></div>
+<div class="h-md-10"></div>
+```
+
+> Style output example
+
+```css
+...
+@media (min-width: 1200px) {
+    .w-lg-10 {
+        width: 10% !important;
+    }
+}
+...
+​```
+
+*/

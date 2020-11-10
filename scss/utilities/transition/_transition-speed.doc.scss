@@ -1,0 +1,29 @@
+/*---
+section: Transition
+title: Transition speed
+---
+Adjust the transition timing class in millisecond
+
+> Available classes
+
+```css
+.transition-350 // 350ms
+```
+
+> Html example
+
+```html
+<div class="transition transition-350"></div>
+```
+
+> Style output example
+
+```css
+...
+.transition-350 {
+    transition-duration: 350ms;
+}
+...
+​```
+
+*/

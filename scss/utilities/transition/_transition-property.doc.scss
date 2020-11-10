@@ -1,0 +1,29 @@
+/*---
+section: Transition
+title: Transition property
+---
+Apply the transition effect by property class
+
+> Available classes
+
+```css
+.transition-width // apply for transition on width only
+```
+
+> Html example
+
+```html
+<div class="transition transition-width"></div>
+```
+
+> Style output example
+
+```css
+...
+.transition-width {
+    transition-property: width !important;
+}
+...
+​```
+
+*/

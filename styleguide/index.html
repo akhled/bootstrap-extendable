@@ -32,6 +32,30 @@
     
   
         
+        <a class="menu-heading" href="#width-and-height-breakpoint-based"><span>Width and height breakpoint based</span></a>
+        
+    
+  
+        
+        <a class="menu-heading" href="#position"><span>Position</span></a>
+        
+    
+        <a class="menu-item" href="#position-alignments"><span>Position alignments</span></a>
+        
+        
+  
+        
+        <a class="menu-heading" href="#transition"><span>Transition</span></a>
+        
+    
+        <a class="menu-item" href="#transition-speed"><span>Transition speed</span></a>
+        
+        
+        <a class="menu-item" href="#transition-property"><span>Transition property</span></a>
+        
+        
+  
+        
   
           </nav>
         </div>
@@ -83,10 +107,244 @@
       </div>
     </section>
     
+    <section id="width-and-height-breakpoint-based">
+      <h1 class="page-title">Width and height breakpoint based</h1>
+
+      <div class="markdown-body">
+        
+        
+    <section>
+      
+
+      <div class="markdown-body">
+        <p>Width class for each breakpoint.</p>
+<blockquote>
+<p>Html example</p>
+</blockquote>
+<pre><code class="lang-html">&lt;div class=&quot;w-lg-50&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;h-md-10&quot;&gt;&lt;/div&gt;
+</code></pre>
+<blockquote>
+<p>Style output example</p>
+</blockquote>
+<pre><code class="lang-css">...
+@media (min-width: 1200px) {
+    .w-lg-10 {
+        width: 10% !important;
+    }
+}
+...
+​
+</code></pre>
+
+        
+      </div>
+    </section>
+    
+      </div>
+    </section>
+    
+    <section id="position">
+      <h1 class="page-title">Position</h1>
+
+      <div class="markdown-body">
+        
+        
+    <section>
+      
+
+      <div class="markdown-body">
+        <p>Apply position classes</p>
+<blockquote>
+<p>Available classes</p>
+</blockquote>
+<pre><code>.p-absolute
+.p-fixed
+</code></pre><blockquote>
+<p>Html example</p>
+</blockquote>
+<pre><code class="lang-html">&lt;div class=&quot;p-absolute&quot;&gt;&lt;/div&gt;
+</code></pre>
+<blockquote>
+<p>Style output example</p>
+</blockquote>
+<pre><code class="lang-css">...
+.p-absolute {
+    position: absolute;
+}
+...
+​
+</code></pre>
+
+        
+      </div>
+    </section>
+    
+    <section id="position-alignments">
+      <h2 class="page-title">Position alignments</h2>
+
+      <div class="markdown-body">
+        <p>Apply position alignments classes (ex: <code>top-0</code>). Available classes for top, bottom, left and right properties. For range <strong>0</strong> to <strong>20</strong> and <strong>(50, 60, 70, 80, 90, 100)</strong></p>
+<blockquote>
+<p>For example, available top classes</p>
+</blockquote>
+<pre><code class="lang-scss">.top-0
+.top-1
+.top-2
+.top-3
+.top-4
+.top-5
+.top-6
+.top-7
+.top-8
+.top-9
+.top-10
+.top-11
+.top-12
+.top-13
+.top-14
+.top-15
+.top-16
+.top-17
+.top-18
+.top-19
+.top-20
+.top-50
+.top-60
+.top-70
+.top-80
+.top-90
+.top-100
+</code></pre>
+<p>and the same for <code>bottom</code>, <code>left</code> and <code>right</code></p>
+<blockquote>
+<p>Html example</p>
+</blockquote>
+<pre><code class="lang-html">&lt;div class=&quot;p-absolute top-0&quot;&gt;&lt;/div&gt;
+</code></pre>
+<blockquote>
+<p>Style output example</p>
+</blockquote>
+<pre><code class="lang-css">...
+.p-absolute {
+    position: absolute;
+}
+.top-0 {
+    top: 0;
+}
+...
+​
+</code></pre>
+
+        
+      </div>
+    </section>
+    
+      </div>
+    </section>
+    
+    <section id="transition">
+      <h1 class="page-title">Transition</h1>
+
+      <div class="markdown-body">
+        
+        
+    <section>
+      
+
+      <div class="markdown-body">
+        <p>Apply transition classes</p>
+<blockquote>
+<p>Available classes</p>
+</blockquote>
+<pre><code>.transition
+</code></pre><blockquote>
+<p>Html example</p>
+</blockquote>
+<pre><code class="lang-html">&lt;div class=&quot;transition&quot;&gt;&lt;/div&gt;
+</code></pre>
+<blockquote>
+<p>Style output example</p>
+</blockquote>
+<pre><code class="lang-css">...
+.transition {
+    transition: all 350ms linear;
+}
+...
+​
+</code></pre>
+
+        
+      </div>
+    </section>
+    
+    <section id="transition-speed">
+      <h2 class="page-title">Transition speed</h2>
+
+      <div class="markdown-body">
+        <p>Adjust the transition timing class in millisecond</p>
+<blockquote>
+<p>Available classes</p>
+</blockquote>
+<pre><code class="lang-css">.transition-350 // 350ms
+</code></pre>
+<blockquote>
+<p>Html example</p>
+</blockquote>
+<pre><code class="lang-html">&lt;div class=&quot;transition transition-350&quot;&gt;&lt;/div&gt;
+</code></pre>
+<blockquote>
+<p>Style output example</p>
+</blockquote>
+<pre><code class="lang-css">...
+.transition-350 {
+    transition-duration: 350ms;
+}
+...
+​
+</code></pre>
+
+        
+      </div>
+    </section>
+    
+    <section id="transition-property">
+      <h2 class="page-title">Transition property</h2>
+
+      <div class="markdown-body">
+        <p>Apply the transition effect by property class</p>
+<blockquote>
+<p>Available classes</p>
+</blockquote>
+<pre><code class="lang-css">.transition-width // apply for transition on width only
+</code></pre>
+<blockquote>
+<p>Html example</p>
+</blockquote>
+<pre><code class="lang-html">&lt;div class=&quot;transition transition-width&quot;&gt;&lt;/div&gt;
+</code></pre>
+<blockquote>
+<p>Style output example</p>
+</blockquote>
+<pre><code class="lang-css">...
+.transition-width {
+    transition-property: width !important;
+}
+...
+​
+</code></pre>
+
+        
+      </div>
+    </section>
+    
+      </div>
+    </section>
+    
         </main>
       </div>
       <footer class="footer">
-        Last modified Wednesday, 11 November 2020 0:22
+        Last modified Wednesday, 11 November 2020 0:52
       </footer>
     </div>
     <script src="prism.js?871234"></script>
