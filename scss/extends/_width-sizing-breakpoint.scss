@@ -4,7 +4,13 @@
 
         @each $prop, $abbrev in (width: w, height: h) {
             @each $size, $length in $sizes {
-                .#{$abbrev}-#{$breakpoint}-#{$size} {
+                $class-name : #{$abbrev}-#{$breakpoint}-#{$size};
+
+                @if ($breakpoint == 'xs') {
+                    $class-name : #{$abbrev}-#{$size};
+                }
+
+                .#{$class-name} {
                     #{$prop}: $length !important;
                 }
             }

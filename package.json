@@ -1,6 +1,6 @@
 {
 	"name": "bootstrap-extendable",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"description": "More help classes for bootstrap",
 	"main": "index.js",
 	"scripts": {
