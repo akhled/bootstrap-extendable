@@ -1,25 +1,25 @@
 @each $breakpoint in map-keys($grid-breakpoints) {
     @include media-breakpoint-up($breakpoint) {
         $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
-        $width: 0;
+        $height: 0;
 
-        @while $width < 151 {
-            $class-name : width-#{$breakpoint}-#{$width};
+        @while $height < 151 {
+            $class-name : height-#{$breakpoint}-#{$height};
 
             @if ($breakpoint == 'xs') {
-                $class-name : width-#{$width};
+                $class-name : height-#{$height};
             }
 
             .#{$class-name} {
-                width: $width + 0px !important;
+                height: $height + 0px !important;
             }
 
-            $width: $width + 5;
+            $height: $height + 5;
         }
 
         @if ($breakpoint != 'xs') {
-            .h-auto {
-                width: auto !important;
+            .w-auto {
+                height: auto !important;
             }
         }
     }
