@@ -20,8 +20,8 @@
 @import './bootstrap-override/sizes';
 @import './bootstrap-override/spacers';
 
-// Extend bootstrap mixins
-@import 'extends/main';
-
 // Utilities
 @import "utilities/main";
+
+// Extended bootstrap classes
+@import 'extends/main';
