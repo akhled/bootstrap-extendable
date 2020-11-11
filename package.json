@@ -12,7 +12,7 @@
 		"prod": "npm run production",
 		"production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
 		"package": "npm run dev && npm run prod",
-		"push": "npm version patch && npm publish --access public"
+		"push": "node push.js"
 	},
 	"repository": {
 		"type": "git",
@@ -42,5 +42,8 @@
 	"dependencies": {
 		"bootstrap": "^4.5.3"
 	},
-	"publishConfig": { "registry": "https://npm.pkg.github.com/" }
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com/"
+	},
+	"style": "dist/css/bootstrap-extendable.css"
 }

@@ -31,29 +31,17 @@ Transparent background with range from **10** to **95** and step equals **5**. T
 */
 
 /*---
-section: Width and height breakpoint based
+section: Display typography
 ---
-Width class for each breakpoint.
+Display-1 to 4 with breakpoints.
 
-> Html example
+Pattern: `display-*-*`
 
-```html
-<div class="w-15"></div>
-<div class="w-lg-50"></div>
-<div class="h-md-10"></div>
-```
+- First parameter: sm, md, lg, xl
+- Second parameter: 1, 2, 3, 4
 
-> Style output example
-
-```css
-...
-@media (min-width: 1200px) {
-    .w-lg-10 {
-        width: 10% !important;
-    }
-}
-...
-​```
+Example: `display-lg-1`
+> It will display on large displays and greater
 
 */
 
@@ -248,6 +236,33 @@ Width class in pixel for with breakpoint support. Range from **0** to **150** wi
 ...
 .width-10 {
     width: 10px !important;
+}
+...
+​```
+
+*/
+
+/*---
+section: Width and height breakpoint based
+---
+Width class for each breakpoint.
+
+> Html example
+
+```html
+<div class="w-15"></div>
+<div class="w-lg-50"></div>
+<div class="h-md-10"></div>
+```
+
+> Style output example
+
+```css
+...
+@media (min-width: 1200px) {
+    .w-lg-10 {
+        width: 10% !important;
+    }
 }
 ...
 ​```

@@ -32,7 +32,7 @@
     
   
         
-        <a class="menu-heading" href="#width-and-height-breakpoint-based"><span>Width and height breakpoint based</span></a>
+        <a class="menu-heading" href="#display-typography"><span>Display typography</span></a>
         
     
   
@@ -57,6 +57,11 @@
   
         
         <a class="menu-heading" href="#width"><span>Width</span></a>
+        
+    
+  
+        
+        <a class="menu-heading" href="#width-and-height-breakpoint-based"><span>Width and height breakpoint based</span></a>
         
     
   
@@ -117,8 +122,8 @@
       </div>
     </section>
     
-    <section id="width-and-height-breakpoint-based">
-      <h1 class="page-title">Width and height breakpoint based</h1>
+    <section id="display-typography">
+      <h1 class="page-title">Display typography</h1>
 
       <div class="markdown-body">
         
@@ -127,26 +132,16 @@
       
 
       <div class="markdown-body">
-        <p>Width class for each breakpoint.</p>
+        <p>Display-1 to 4 with breakpoints.</p>
+<p>Pattern: <code>display-*-*</code></p>
+<ul>
+<li>First parameter: sm, md, lg, xl</li>
+<li>Second parameter: 1, 2, 3, 4</li>
+</ul>
+<p>Example: <code>display-lg-1</code></p>
 <blockquote>
-<p>Html example</p>
+<p>It will display on large displays and greater</p>
 </blockquote>
-<pre><code class="lang-html">&lt;div class=&quot;w-15&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;w-lg-50&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;h-md-10&quot;&gt;&lt;/div&gt;
-</code></pre>
-<blockquote>
-<p>Style output example</p>
-</blockquote>
-<pre><code class="lang-css">...
-@media (min-width: 1200px) {
-    .w-lg-10 {
-        width: 10% !important;
-    }
-}
-...
-​
-</code></pre>
 
         
       </div>
@@ -382,6 +377,44 @@
       </div>
     </section>
     
+    <section id="width-and-height-breakpoint-based">
+      <h1 class="page-title">Width and height breakpoint based</h1>
+
+      <div class="markdown-body">
+        
+        
+    <section>
+      
+
+      <div class="markdown-body">
+        <p>Width class for each breakpoint.</p>
+<blockquote>
+<p>Html example</p>
+</blockquote>
+<pre><code class="lang-html">&lt;div class=&quot;w-15&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;w-lg-50&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;h-md-10&quot;&gt;&lt;/div&gt;
+</code></pre>
+<blockquote>
+<p>Style output example</p>
+</blockquote>
+<pre><code class="lang-css">...
+@media (min-width: 1200px) {
+    .w-lg-10 {
+        width: 10% !important;
+    }
+}
+...
+​
+</code></pre>
+
+        
+      </div>
+    </section>
+    
+      </div>
+    </section>
+    
     <section id="height">
       <h1 class="page-title">Height</h1>
 
@@ -446,7 +479,7 @@
         </main>
       </div>
       <footer class="footer">
-        Last modified Wednesday, 11 November 2020 5:00
+        Last modified Wednesday, 11 November 2020 16:56
       </footer>
     </div>
     <script src="prism.js?871234"></script>
