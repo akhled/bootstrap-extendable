@@ -1,0 +1,20 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+        $height: 50;
+
+        @while $height < 100 {
+            $class-name : hv-#{$breakpoint}-#{$height};
+
+            @if ($breakpoint == 'xs') {
+                $class-name : hv-#{$height};
+            }
+
+            .#{$class-name} {
+                height: $height + 0vh !important;
+            }
+
+            $height: $height + 5;
+        }
+    }
+}

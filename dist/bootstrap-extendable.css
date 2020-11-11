@@ -1,5 +1,5 @@
 /*!
- * Bootstrap extendable v0.0.5 (https://github.com/amrography/bootstrap-extendable)
+ * Bootstrap extendable v0.0.7 (https://github.com/amrography/bootstrap-extendable)
  * Copyright 2020 Amro Khaled
  * Licensed under MIT
  */
@@ -1155,6 +1155,216 @@
 
   .width-xl-150 {
     width: 150px !important;
+  }
+}
+
+/* ----------------------- height ----------------------- */
+
+.hv-50 {
+  height: 50vh !important;
+}
+
+.hv-55 {
+  height: 55vh !important;
+}
+
+.hv-60 {
+  height: 60vh !important;
+}
+
+.hv-65 {
+  height: 65vh !important;
+}
+
+.hv-70 {
+  height: 70vh !important;
+}
+
+.hv-75 {
+  height: 75vh !important;
+}
+
+.hv-80 {
+  height: 80vh !important;
+}
+
+.hv-85 {
+  height: 85vh !important;
+}
+
+.hv-90 {
+  height: 90vh !important;
+}
+
+.hv-95 {
+  height: 95vh !important;
+}
+
+@media (min-width: 576px) {
+  .hv-sm-50 {
+    height: 50vh !important;
+  }
+
+  .hv-sm-55 {
+    height: 55vh !important;
+  }
+
+  .hv-sm-60 {
+    height: 60vh !important;
+  }
+
+  .hv-sm-65 {
+    height: 65vh !important;
+  }
+
+  .hv-sm-70 {
+    height: 70vh !important;
+  }
+
+  .hv-sm-75 {
+    height: 75vh !important;
+  }
+
+  .hv-sm-80 {
+    height: 80vh !important;
+  }
+
+  .hv-sm-85 {
+    height: 85vh !important;
+  }
+
+  .hv-sm-90 {
+    height: 90vh !important;
+  }
+
+  .hv-sm-95 {
+    height: 95vh !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .hv-md-50 {
+    height: 50vh !important;
+  }
+
+  .hv-md-55 {
+    height: 55vh !important;
+  }
+
+  .hv-md-60 {
+    height: 60vh !important;
+  }
+
+  .hv-md-65 {
+    height: 65vh !important;
+  }
+
+  .hv-md-70 {
+    height: 70vh !important;
+  }
+
+  .hv-md-75 {
+    height: 75vh !important;
+  }
+
+  .hv-md-80 {
+    height: 80vh !important;
+  }
+
+  .hv-md-85 {
+    height: 85vh !important;
+  }
+
+  .hv-md-90 {
+    height: 90vh !important;
+  }
+
+  .hv-md-95 {
+    height: 95vh !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .hv-lg-50 {
+    height: 50vh !important;
+  }
+
+  .hv-lg-55 {
+    height: 55vh !important;
+  }
+
+  .hv-lg-60 {
+    height: 60vh !important;
+  }
+
+  .hv-lg-65 {
+    height: 65vh !important;
+  }
+
+  .hv-lg-70 {
+    height: 70vh !important;
+  }
+
+  .hv-lg-75 {
+    height: 75vh !important;
+  }
+
+  .hv-lg-80 {
+    height: 80vh !important;
+  }
+
+  .hv-lg-85 {
+    height: 85vh !important;
+  }
+
+  .hv-lg-90 {
+    height: 90vh !important;
+  }
+
+  .hv-lg-95 {
+    height: 95vh !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hv-xl-50 {
+    height: 50vh !important;
+  }
+
+  .hv-xl-55 {
+    height: 55vh !important;
+  }
+
+  .hv-xl-60 {
+    height: 60vh !important;
+  }
+
+  .hv-xl-65 {
+    height: 65vh !important;
+  }
+
+  .hv-xl-70 {
+    height: 70vh !important;
+  }
+
+  .hv-xl-75 {
+    height: 75vh !important;
+  }
+
+  .hv-xl-80 {
+    height: 80vh !important;
+  }
+
+  .hv-xl-85 {
+    height: 85vh !important;
+  }
+
+  .hv-xl-90 {
+    height: 90vh !important;
+  }
+
+  .hv-xl-95 {
+    height: 95vh !important;
   }
 }
 

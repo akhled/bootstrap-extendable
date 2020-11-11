@@ -1,4 +1,5 @@
-styleguide
+*.doc.scss
 dist/build
 dist/mix-manifest.json
+styleguide
 webpack.mix.js

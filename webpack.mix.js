@@ -29,15 +29,19 @@ mix.sass(
 );
 
 
-/**
- * Generate documentation
- */
-mix.sass(
-    'scss/bootstrap-extendable.doc.scss',
-    'build/doc.css'
-)
-    .options({
-        postCss: [
-            require('mdcss')(),
-        ],
-    });
+if (mix.inProduction()) {
+    //
+} else {
+    /**
+     * Generate documentation
+     */
+    mix.sass(
+        'scss/bootstrap-extendable.doc.scss',
+        'build/doc.css'
+    )
+        .options({
+            postCss: [
+                require('mdcss')(),
+            ],
+        });
+}
