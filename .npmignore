@@ -1,3 +1,4 @@
 styleguide
-dist/build/doc.css
+dist/build
+dist/mix-manifest.json
 webpack.mix.js
