@@ -1,0 +1,19 @@
+$positions: (
+	static: static,
+	relative: relative,
+	absolute: absolute,
+	fixed: fixed,
+	sticky: sticky,
+);
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+	@include media-breakpoint-up($breakpoint) {
+		@each $position in map-keys($positions) {
+			@if ($breakpoint != 'xs') {
+				.position-#{$breakpoint}-#{$position} {
+					position: $position !important;
+				}
+			}
+		}
+	}
+}

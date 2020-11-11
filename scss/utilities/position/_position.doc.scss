@@ -1,5 +1,22 @@
 /*---
 section: Position
 ---
+Apply position classes with breakpoint supported
+
+> Html example
+
+```html
+<div class="position-lg-absolute"></div>
+```
+
+> Style output example
+
+```css
+...
+.position-lg-absolute {
+    position: absolute;
+}
+...
+​```
 
 */
