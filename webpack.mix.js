@@ -12,9 +12,6 @@ const del = require('del');
  |
  */
 
-// Delete old styleguide
-del('styleguide');
-
 // Set output path to dist
 mix.setPublicPath('dist');
 
@@ -35,6 +32,8 @@ if (mix.inProduction()) {
     /**
      * Generate documentation
      */
+    del('styleguide');
+
     mix.sass(
         'scss/bootstrap-extendable.doc.scss',
         'build/doc.css'
