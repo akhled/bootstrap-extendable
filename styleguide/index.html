@@ -1,0 +1,512 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Style Guide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="primer.css" rel="stylesheet"><link href="style.css" rel="stylesheet"><link href="octicons/octicons.css" rel="stylesheet">
+    <script>examples={"base":"","target":"_self","css":["style.css"],"js":[],"bodyjs":[],"htmlcss":"background:none;border:0;clip:auto;display:block;height:auto;margin:0;padding:0;position:static;width:auto","bodycss":"background:none;border:0;clip:auto;display:block;height:auto;margin:0;padding:16px;position:static;width:auto"};</script>
+    
+  </head>
+  <body>
+    <header class="masthead" style="background-color: #4078c0;">
+      <div class="container">
+        <a href="/" class="masthead-logo">
+          <img src="mdcss-logo.png" alt="Style Guide" height="32"> Style Guide
+        </a>
+        <nav class="masthead-nav">
+            
+        </nav>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="columns docs-layout">
+        <div class="one-fourth column">
+          <nav class="menu docs-menu">
+            
+    
+        <a class="menu-heading" href="#alpha-background"><span>Alpha background</span></a>
+        
+    
+  
+        
+        <a class="menu-heading" href="#width-and-height-breakpoint-based"><span>Width and height breakpoint based</span></a>
+        
+    
+  
+        
+        <a class="menu-heading" href="#position"><span>Position</span></a>
+        
+    
+        <a class="menu-item" href="#position-alignments"><span>Position alignments</span></a>
+        
+        
+  
+        
+        <a class="menu-heading" href="#transition"><span>Transition</span></a>
+        
+    
+        <a class="menu-item" href="#transition-speed"><span>Transition speed</span></a>
+        
+        
+        <a class="menu-item" href="#transition-property"><span>Transition property</span></a>
+        
+        
+  
+        
+        <a class="menu-heading" href="#width"><span>Width</span></a>
+        
+    
+  
+        
+        <a class="menu-heading" href="#height"><span>Height</span></a>
+        
+    
+  
+        
+  
+          </nav>
+        </div>
+
+        <main class="three-fourths column markdown-body">
+          
+    <section>
+      
+
+      <div class="markdown-body">
+        <h1 id="bootstrap-extendable">Bootstrap extendable</h1>
+
+        
+      </div>
+    </section>
+    
+    <section id="alpha-background">
+      <h1 class="page-title">Alpha background</h1>
+
+      <div class="markdown-body">
+        
+        
+    <section>
+      
+
+      <div class="markdown-body">
+        <p>Transparent background with range from <strong>10</strong> to <strong>95</strong> and step equals <strong>5</strong>. The class cas hover and focus effect on both <code>&lt;button&gt;</code> and <code>&lt;a&gt;</code> elements.</p>
+<blockquote>
+<p>Html example</p>
+</blockquote>
+<pre><code class="lang-html">&lt;button class=&quot;bg-primary-50&quot;&gt;Click&lt;/button&gt;
+&lt;div class=&quot;bg-light-85&quot;&gt;&lt;/div&gt;
+</code></pre>
+<blockquote>
+<p>Style output example</p>
+</blockquote>
+<pre><code class="lang-css">...
+.bg-light-80 {
+    background-color: rgba(248, 249, 250, 80) !important;
+}
+...
+​
+</code></pre>
+
+        
+      </div>
+    </section>
+    
+      </div>
+    </section>
+    
+    <section id="width-and-height-breakpoint-based">
+      <h1 class="page-title">Width and height breakpoint based</h1>
+
+      <div class="markdown-body">
+        
+        
+    <section>
+      
+
+      <div class="markdown-body">
+        <p>Width class for each breakpoint.</p>
+<blockquote>
+<p>Html example</p>
+</blockquote>
+<pre><code class="lang-html">&lt;div class=&quot;w-15&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;w-lg-50&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;h-md-10&quot;&gt;&lt;/div&gt;
+</code></pre>
+<blockquote>
+<p>Style output example</p>
+</blockquote>
+<pre><code class="lang-css">...
+@media (min-width: 1200px) {
+    .w-lg-10 {
+        width: 10% !important;
+    }
+}
+...
+​
+</code></pre>
+
+        
+      </div>
+    </section>
+    
+      </div>
+    </section>
+    
+    <section id="position">
+      <h1 class="page-title">Position</h1>
+
+      <div class="markdown-body">
+        
+        
+    <section>
+      
+
+      <div class="markdown-body">
+        <p>Apply position classes with breakpoint supported</p>
+<blockquote>
+<p>Html example</p>
+</blockquote>
+<pre><code class="lang-html">&lt;div class=&quot;position-lg-absolute&quot;&gt;&lt;/div&gt;
+</code></pre>
+<blockquote>
+<p>Style output example</p>
+</blockquote>
+<pre><code class="lang-css">...
+.position-lg-absolute {
+    position: absolute;
+}
+...
+​
+</code></pre>
+
+        
+      </div>
+    </section>
+    
+    <section id="position-alignments">
+      <h2 class="page-title">Position alignments</h2>
+
+      <div class="markdown-body">
+        <p>Apply position alignments classes (ex: <code>top-0</code>). Available classes for top, bottom, left and right properties. For range <strong>0</strong> to <strong>20</strong> and <strong>(50, 60, 70, 80, 90, 100)</strong></p>
+<blockquote>
+<p>For example, available top classes</p>
+</blockquote>
+<pre><code class="lang-scss">.top-0
+.top-1
+.top-2
+.top-3
+.top-4
+.top-5
+.top-6
+.top-7
+.top-8
+.top-9
+.top-10
+.top-11
+.top-12
+.top-13
+.top-14
+.top-15
+.top-16
+.top-17
+.top-18
+.top-19
+.top-20
+.top-50
+.top-60
+.top-70
+.top-80
+.top-90
+.top-100
+</code></pre>
+<p>and the same for <code>bottom</code>, <code>left</code> and <code>right</code></p>
+<blockquote>
+<p>Html example</p>
+</blockquote>
+<pre><code class="lang-html">&lt;div class=&quot;p-absolute top-0&quot;&gt;&lt;/div&gt;
+</code></pre>
+<blockquote>
+<p>Style output example</p>
+</blockquote>
+<pre><code class="lang-css">...
+.p-absolute {
+    position: absolute;
+}
+.top-0 {
+    top: 0;
+}
+...
+​
+</code></pre>
+
+        
+      </div>
+    </section>
+    
+      </div>
+    </section>
+    
+    <section id="transition">
+      <h1 class="page-title">Transition</h1>
+
+      <div class="markdown-body">
+        
+        
+    <section>
+      
+
+      <div class="markdown-body">
+        <p>Apply transition classes</p>
+<blockquote>
+<p>Available classes</p>
+</blockquote>
+<pre><code>.transition
+</code></pre><blockquote>
+<p>Html example</p>
+</blockquote>
+<pre><code class="lang-html">&lt;div class=&quot;transition&quot;&gt;&lt;/div&gt;
+</code></pre>
+<blockquote>
+<p>Style output example</p>
+</blockquote>
+<pre><code class="lang-css">...
+.transition {
+    transition: all 350ms linear;
+}
+...
+​
+</code></pre>
+
+        
+      </div>
+    </section>
+    
+    <section id="transition-speed">
+      <h2 class="page-title">Transition speed</h2>
+
+      <div class="markdown-body">
+        <p>Adjust the transition timing class in millisecond</p>
+<blockquote>
+<p>Available classes</p>
+</blockquote>
+<pre><code class="lang-css">.transition-350 // 350ms
+</code></pre>
+<blockquote>
+<p>Html example</p>
+</blockquote>
+<pre><code class="lang-html">&lt;div class=&quot;transition transition-350&quot;&gt;&lt;/div&gt;
+</code></pre>
+<blockquote>
+<p>Style output example</p>
+</blockquote>
+<pre><code class="lang-css">...
+.transition-350 {
+    transition-duration: 350ms;
+}
+...
+​
+</code></pre>
+
+        
+      </div>
+    </section>
+    
+    <section id="transition-property">
+      <h2 class="page-title">Transition property</h2>
+
+      <div class="markdown-body">
+        <p>Apply the transition effect by property class</p>
+<blockquote>
+<p>Available classes</p>
+</blockquote>
+<pre><code class="lang-css">.transition-width // apply for transition on width only
+</code></pre>
+<blockquote>
+<p>Html example</p>
+</blockquote>
+<pre><code class="lang-html">&lt;div class=&quot;transition transition-width&quot;&gt;&lt;/div&gt;
+</code></pre>
+<blockquote>
+<p>Style output example</p>
+</blockquote>
+<pre><code class="lang-css">...
+.transition-width {
+    transition-property: width !important;
+}
+...
+​
+</code></pre>
+
+        
+      </div>
+    </section>
+    
+      </div>
+    </section>
+    
+    <section id="width">
+      <h1 class="page-title">Width</h1>
+
+      <div class="markdown-body">
+        
+        
+    <section>
+      
+
+      <div class="markdown-body">
+        <p>Width class in pixel for with breakpoint support. Range from <strong>0</strong> to <strong>150</strong> with step <strong>5</strong></p>
+<blockquote>
+<p>Html example</p>
+</blockquote>
+<pre><code class="lang-html">&lt;div class=&quot;width-50&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;width-lg-10&quot;&gt;&lt;/div&gt;
+</code></pre>
+<blockquote>
+<p>Style output example</p>
+</blockquote>
+<pre><code class="lang-css">...
+.width-10 {
+    width: 10px !important;
+}
+...
+​
+</code></pre>
+
+        
+      </div>
+    </section>
+    
+      </div>
+    </section>
+    
+    <section id="height">
+      <h1 class="page-title">Height</h1>
+
+      <div class="markdown-body">
+        
+        
+    <section>
+      
+
+      <div class="markdown-body">
+        <p>Height class in pixel for with breakpoint support. Range from <strong>0</strong> to <strong>150</strong> with step <strong>5</strong></p>
+<blockquote>
+<p>Html example</p>
+</blockquote>
+<pre><code class="lang-html">&lt;div class=&quot;height-50&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;height-lg-10&quot;&gt;&lt;/div&gt;
+</code></pre>
+<blockquote>
+<p>Style output example</p>
+</blockquote>
+<pre><code class="lang-css">...
+.height-10 {
+    height: 10px !important;
+}
+...
+​
+</code></pre>
+
+        
+      </div>
+    </section>
+    
+    <section>
+      
+
+      <div class="markdown-body">
+        <p>Height class in <code>vh</code> for with breakpoint support. Range from <strong>50</strong> to <strong>100</strong> with step <strong>5</strong></p>
+<blockquote>
+<p>Html example</p>
+</blockquote>
+<pre><code class="lang-html">&lt;div class=&quot;hv-50&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;hv-lg-10&quot;&gt;&lt;/div&gt;
+</code></pre>
+<blockquote>
+<p>Style output example</p>
+</blockquote>
+<pre><code class="lang-css">...
+.hv-10 {
+    hv: 10vh !important;
+}
+...
+​
+</code></pre>
+
+        
+      </div>
+    </section>
+    
+      </div>
+    </section>
+    
+        </main>
+      </div>
+      <footer class="footer">
+        Last modified Wednesday, 11 November 2020 3:49
+      </footer>
+    </div>
+    <script src="prism.js?871234"></script>
+    <script src="examples.js?873428"></script>
+    <script src="script.js?02359872"></script>
+    <script src="anchor.min.js?225234"></script>
+    <script src="interact.min.js?8552934"></script>
+    <script>
+     anchors.options = {
+         placement: 'left',
+         visible: 'hover',
+         class: 'anchor-link'
+     };
+     anchors.add('h2, h3');
+
+     /* interact('.docs-resize')
+      *   .resizable({
+      *     edges: {
+      *       left: '.c-resize--left',
+      *       right: '.c-resize--right',
+      *       bottom: false,
+      *       top: false
+      *     },
+      *     onmove: function (e) {
+      *       var width = e.rect.width,
+      *         windowWidth = $(window).width();
+
+      *       if (width < 160) {
+      *         width = 160;
+      *       } else if ((width * 2) + 100 > windowWidth) {
+      *         width = (windowWidth - 100) / 2;
+      *       }
+
+      *       $('.docs-example').find('docs-resize').addClass('resize-overlay');
+      *       $('.docs-resize').style.width = (width * 2) + 'px';
+      *     },
+      *     onend: function () {
+      *       $('.docs-example').find('docs-resize').removeClass('resize-overlay');
+      *     }
+      *   })
+      *   .on('resizemove', function (event) {
+      *     var target = event.target,
+      *         x = (parseFloat(target.getAttribute('data-x')) || 0);
+
+      *     // update the element's style
+      *     target.style.width  = event.rect.width + 'px';
+
+      *     // translate when resizing from top or left edges
+      *     x += event.deltaRect.left;
+
+      *     target.style.webkitTransform = target.style.transform =
+      *       'translateX(' + x + 'px)';
+
+      *     target.setAttribute('data-x', x);
+      *     target.textContent = Math.round(event.rect.width);
+      *   });*/
+    </script>
+    
+  
+  </body>
+</html>
+
+
