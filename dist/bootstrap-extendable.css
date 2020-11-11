@@ -1,5 +1,5 @@
 /*!
- * Bootstrap extendable v0.0.10 (https://github.com/amrography/bootstrap-extendable)
+ * Bootstrap extendable v0.0.12 (https://github.com/amrography/bootstrap-extendable)
  * Copyright 2020 Amro Khaled
  * Licensed under MIT
  */
@@ -4292,130 +4292,106 @@ button.bg-dark-90:focus {
   }
 }
 
-.display-1 {
-  font-size: 2.5rem;
-  font-weight: inherit;
-  line-height: normal;
-}
-
-.display-2 {
-  font-size: 2rem;
-  font-weight: inherit;
-  line-height: normal;
-}
-
-.display-3 {
-  font-size: 1.75rem;
-  font-weight: inherit;
-  line-height: normal;
-}
-
-.display-4 {
-  font-size: 1.5rem;
-  font-weight: inherit;
-  line-height: normal;
-}
-
 @media (min-width: 576px) {
   .display-sm-1 {
-    font-size: 2.5rem;
-    font-weight: inherit;
-    line-height: normal;
+    font-size: 6rem;
+    font-weight: 300;
+    line-height: 1.2;
   }
 
   .display-sm-2 {
-    font-size: 2rem;
-    font-weight: inherit;
-    line-height: normal;
+    font-size: 5.5rem;
+    font-weight: 300;
+    line-height: 1.2;
   }
 
   .display-sm-3 {
-    font-size: 1.75rem;
-    font-weight: inherit;
-    line-height: normal;
+    font-size: 4.5rem;
+    font-weight: 300;
+    line-height: 1.2;
   }
 
   .display-sm-4 {
-    font-size: 1.5rem;
-    font-weight: inherit;
-    line-height: normal;
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 1.2;
   }
 }
 
 @media (min-width: 768px) {
   .display-md-1 {
-    font-size: 2.5rem;
-    font-weight: inherit;
-    line-height: normal;
+    font-size: 6rem;
+    font-weight: 300;
+    line-height: 1.2;
   }
 
   .display-md-2 {
-    font-size: 2rem;
-    font-weight: inherit;
-    line-height: normal;
+    font-size: 5.5rem;
+    font-weight: 300;
+    line-height: 1.2;
   }
 
   .display-md-3 {
-    font-size: 1.75rem;
-    font-weight: inherit;
-    line-height: normal;
+    font-size: 4.5rem;
+    font-weight: 300;
+    line-height: 1.2;
   }
 
   .display-md-4 {
-    font-size: 1.5rem;
-    font-weight: inherit;
-    line-height: normal;
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 1.2;
   }
 }
 
 @media (min-width: 992px) {
   .display-lg-1 {
-    font-size: 2.5rem;
-    font-weight: inherit;
-    line-height: normal;
+    font-size: 6rem;
+    font-weight: 300;
+    line-height: 1.2;
   }
 
   .display-lg-2 {
-    font-size: 2rem;
-    font-weight: inherit;
-    line-height: normal;
+    font-size: 5.5rem;
+    font-weight: 300;
+    line-height: 1.2;
   }
 
   .display-lg-3 {
-    font-size: 1.75rem;
-    font-weight: inherit;
-    line-height: normal;
+    font-size: 4.5rem;
+    font-weight: 300;
+    line-height: 1.2;
   }
 
   .display-lg-4 {
-    font-size: 1.5rem;
-    font-weight: inherit;
-    line-height: normal;
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 1.2;
   }
 }
 
 @media (min-width: 1200px) {
   .display-xl-1 {
-    font-size: 2.5rem;
-    font-weight: inherit;
-    line-height: normal;
+    font-size: 6rem;
+    font-weight: 300;
+    line-height: 1.2;
   }
 
   .display-xl-2 {
-    font-size: 2rem;
-    font-weight: inherit;
-    line-height: normal;
+    font-size: 5.5rem;
+    font-weight: 300;
+    line-height: 1.2;
   }
 
   .display-xl-3 {
-    font-size: 1.75rem;
-    font-weight: inherit;
-    line-height: normal;
+    font-size: 4.5rem;
+    font-weight: 300;
+    line-height: 1.2;
   }
 
   .display-xl-4 {
-    font-size: 1.5rem;
-    font-weight: inherit;
-    line-height: normal;
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 1.2;
   }
 }

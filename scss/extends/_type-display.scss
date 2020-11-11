@@ -1,26 +1,28 @@
 @each $breakpoint in map-keys($grid-breakpoints) {
 	@include media-breakpoint-up($breakpoint) {
-        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+		$infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
-		.display#{$infix}-1 {
-			@include font-size($h1-font-size);
-			font-weight: inherit;
-			line-height: normal;
-		}
-		.display#{$infix}-2 {
-			@include font-size($h2-font-size);
-			font-weight: inherit;
-			line-height: normal;
-		}
-		.display#{$infix}-3 {
-			@include font-size($h3-font-size);
-			font-weight: inherit;
-			line-height: normal;
-		}
-		.display#{$infix}-4 {
-			@include font-size($h4-font-size);
-			font-weight: inherit;
-			line-height: normal;
+		@if ($breakpoint != 'xs') {
+			.display#{$infix}-1 {
+				@include font-size($display1-size);
+				font-weight: $display1-weight;
+				line-height: $display-line-height;
+			}
+			.display#{$infix}-2 {
+				@include font-size($display2-size);
+				font-weight: $display2-weight;
+				line-height: $display-line-height;
+			}
+			.display#{$infix}-3 {
+				@include font-size($display3-size);
+				font-weight: $display3-weight;
+				line-height: $display-line-height;
+			}
+			.display#{$infix}-4 {
+				@include font-size($display4-size);
+				font-weight: $display4-weight;
+				line-height: $display-line-height;
+			}
 		}
 	}
 }
