@@ -1,6 +1,7 @@
 const mix = require('laravel-mix');
 const del = require('del');
-const postcss = require('postcss');
+const { spawn, exec } = require('child_process');
+const fs = require('fs');
 
 /*
  |--------------------------------------------------------------------------
@@ -33,7 +34,17 @@ if (mix.inProduction()) {
 	 */
 	del('styleguide');
 
-	mix.sass('scss/bootstrap-extendable.doc.scss', 'build/doc.css').options({
-		postCss: [require('./build/take-classes-out.js')(), require('mdcss')()],
-	});
+	mix
+		.extend('foo', () => {
+			exec('node build/take-classes-out.js');
+		})
+		.sass('scss/bootstrap-extendable.doc.scss', 'build/doc.css')
+		.options({
+			postCss: [
+				require('postcss-raw-append')({
+					data: fs.readFileSync('./dist/build/classes-list.txt', 'utf-8'),
+				}),
+				require('mdcss')(),
+			],
+		});
 }
