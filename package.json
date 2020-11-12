@@ -12,7 +12,8 @@
 		"prod": "npm run production",
 		"production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
 		"package": "npm run dev && npm run prod",
-		"push": "node push.js"
+		"push": "node push.js",
+		"take:classes": "node build/take-classes-out.js"
 	},
 	"repository": {
 		"type": "git",
@@ -35,6 +36,7 @@
 		"del": "^6.0.0",
 		"laravel-mix": "^5.0.9",
 		"mdcss": "^1.5.2",
+		"postcss-raw-append": "^1.0.0",
 		"resolve-url-loader": "^3.1.0",
 		"sass": "^1.29.0",
 		"sass-loader": "^10.0.5"

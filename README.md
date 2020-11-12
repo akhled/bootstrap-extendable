@@ -7,13 +7,15 @@ Adding more helper classes for bootstrap 4.
 Using scss
 
 ```scss
+// import bootsrap
 @import '~bootstrap-extendable/scss/bootstrap-extendable';
-// then import bootsrap
+// or
+@import '/node_modules/bootstrap-extendable/dist/bootstrap-extendable';
 ```
 
 Or using css
 
 ```css
-@import url('/node_modules/bootstrap-extendable/dist/bootstrap-extendable.min.css');
 /* then import bootsrap */
+@import url('/node_modules/bootstrap-extendable/dist/bootstrap-extendable.min.css');
 ```

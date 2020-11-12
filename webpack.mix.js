@@ -1,5 +1,6 @@
 const mix = require('laravel-mix');
 const del = require('del');
+const postcss = require('postcss');
 
 /*
  |--------------------------------------------------------------------------
@@ -19,28 +20,20 @@ mix.setPublicPath('dist');
  * Build stylesheets
  */
 mix.sass(
-    'scss/bootstrap-extendable.scss',
-    mix.inProduction()
-        ? 'dist/bootstrap-extendable.min.css'
-        : 'dist/bootstrap-extendable.css'
+	'scss/bootstrap-extendable.scss',
+	mix.inProduction()
+		? 'dist/bootstrap-extendable.min.css'
+		: 'dist/bootstrap-extendable.css'
 );
 
-
 if (mix.inProduction()) {
-    //
 } else {
-    /**
-     * Generate documentation
-     */
-    del('styleguide');
+	/**
+	 * Generate documentation
+	 */
+	del('styleguide');
 
-    mix.sass(
-        'scss/bootstrap-extendable.doc.scss',
-        'build/doc.css'
-    )
-        .options({
-            postCss: [
-                require('mdcss')(),
-            ],
-        });
+	mix.sass('scss/bootstrap-extendable.doc.scss', 'build/doc.css').options({
+		postCss: [require('./build/take-classes-out.js')(), require('mdcss')()],
+	});
 }

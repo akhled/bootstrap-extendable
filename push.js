@@ -37,7 +37,7 @@ class Command {
         return await new Promise(() => {
             this.command.on("close", code => {
                 console.log(`✅ ${this.originalCommand} is done with code ${code}`);
-                return resolve()
+                resolve()
             })
         })
     }
@@ -45,9 +45,10 @@ class Command {
 
 class Publish {
     async buildCss() {
-        const prod = new Command('npm run dev');
-        await prod.listen()
-        return new Promise(resolve => resolve())
+        const command = new Command('npm run dev');
+        return await new Promise(async (resolve) => {
+            return await command.listen().then(_ => resolve())
+        })
     }
 
     buildMinifyCss() {
@@ -56,7 +57,8 @@ class Publish {
 }
 
 const publish = new Publish();
-publish.buildCss().then(() => console.log('here'))
+const com = publish.buildCss()
+com.then(() => console.log('there'))
 // publish.buildMinifyCss()
 return;
 exec("npm run dev", commandCallback(error, stdout, stderr, (stop) => {
