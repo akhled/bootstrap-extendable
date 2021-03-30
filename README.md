@@ -2,7 +2,6 @@
 
 Adding more helper classes for bootstrap 4.
 
-
 ## Usage
 
 Using scss
